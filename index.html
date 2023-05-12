@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+    
+    <!-- meta data-->
     <meta charset="utf-8" />
     <meta name="description" content="multiplication calculator" />
     <meta name="keywords" content="immaculata, ics2o" />
     <meta name="author" content="Everett" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="multiply symbol" sizes="180x180" href="https://icons-for-free.com/iconfiles/png/512/delete+multiplication+multiply+remove+icon-1320086704077698496.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://icons-for-free.com/iconfiles/png/512/delete+multiplication+multiply+remove+icon-1320086704077698496.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="https://icons-for-free.com/iconfiles/png/512/delete+multiplication+multiply+remove+icon-1320086704077698496.png" />
+    
+    <!-- favicon-->
+    <link rel="multiply symbol" sizes="180x180" href="./img/multiplyfavacon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/multiplyfavacon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/multiplyfavacon.png" />   
+    
+    <!--stylesheet-->
     <link rel="manifest" href="./fav_index/site.webmanifest" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-teal.min.css" />
@@ -26,8 +32,11 @@
       </header>
       <main class="mdl-layout__content">
         <center>
+          
+        <!-- title and image-->
          <h1>Multiplier Calculator With For Loop</h1>
-        <img src="https://images.emojiterra.com/google/android-11/512px/2716.png" alt="Multiply symbol image" width="333" height="333">
+        <img src="./img/multiplysymbol.png" alt="Multiply symbol image" width="333" height="333">
+          
         <!-- User input interger num1 texfield -->
         <form action="#">
           <p>Input Integer:</p>
@@ -37,10 +46,11 @@
               type="number" 
               id="num1"
             />
-            <label class="mdl-textfield__label" for="num1">Min</label>
+            <label class="mdl-textfield__label" for="num1">num1</label>
             <span class="mdl-textfield__error">Input is not valid</span>
           </div>
         </form>
+          
           <!-- User input interger num2 texfield -->
         <form action="#">
           <p>Input Integer:</p>
@@ -50,11 +60,12 @@
               type="number" 
               id="num2"
             />
-            <label class="mdl-textfield__label" for="num2">Max</label>
+            <label class="mdl-textfield__label" for="num2">num2</label>
             <span class="mdl-textfield__error">Input is not valid</span>
           </div>
         </form>
-        <!-- button to display calculation of js file  -->
+          
+        <!-- button connected to js to display calculation of js file (multiplication)   -->
         <button
           class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
           onclick="calculate()"
